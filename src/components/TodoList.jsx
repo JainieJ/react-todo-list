@@ -20,7 +20,7 @@ class TodoList extends Component {
         <button
           type="button"
           className="btn btn-danger btn-block mt-5 text-capitalize"
-          onClick={this.clearList}
+          onClick={clearList}
         >
           clear list
         </button>
