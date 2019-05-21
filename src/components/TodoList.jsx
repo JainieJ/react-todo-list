@@ -13,7 +13,7 @@ class TodoList extends Component {
               key={item.id}
               title={item.title}
               handleDelete={() => handleDelete(item.id)}
-              handleEdit={() => handleEdit(item.id)}
+              handleEdit={() => handleEdit(item.id, item.title)}
             />
           ))}
         </h3>
