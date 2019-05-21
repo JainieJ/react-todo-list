@@ -25,10 +25,11 @@ class App extends Component {
     this.setState({ items: newItems, id: uuid(), item: "", editItem: false });
   };
   clearList = () => {
-    console.log("cleared");
+    this.setState({ items: [] });
   };
   handleDelete = id => {
-    console.log("deleted", id);
+    const filtered = this.state.items.filter(i => i.id !== id);
+    this.setState({ items: filtered });
   };
   handleEdit = id => {
     console.log("edited", id);
